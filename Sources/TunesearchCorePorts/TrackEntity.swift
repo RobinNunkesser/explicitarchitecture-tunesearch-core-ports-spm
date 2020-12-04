@@ -24,7 +24,7 @@ public class TrackEntity : Codable, Comparable {
     let discNumber: Int?
     let artworkUrl: URL
     
-    init(artistName: String, collectionName: String, trackName: String, trackNumber: Int, discNumber: Int, artworkUrl: URL) {
+    public init(artistName: String, collectionName: String, trackName: String, trackNumber: Int, discNumber: Int, artworkUrl: URL) {
         self.trackNumber = trackNumber
         self.artistName = artistName
         self.trackName = trackName
