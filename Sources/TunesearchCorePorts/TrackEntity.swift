@@ -1,7 +1,7 @@
 import Foundation
 
-class TrackEntity : Codable, Comparable {
-    static func < (lhs: TrackEntity, rhs: TrackEntity) -> Bool {
+public class TrackEntity : Codable, Comparable {
+    public static func < (lhs: TrackEntity, rhs: TrackEntity) -> Bool {
         if lhs.collectionName != rhs.collectionName {
             return lhs.collectionName < rhs.collectionName
         }
@@ -11,7 +11,7 @@ class TrackEntity : Codable, Comparable {
         return lhs.trackNumber ?? 0 < rhs.trackNumber ?? 0
     }
     
-    static func == (lhs: TrackEntity, rhs: TrackEntity) -> Bool {
+    public static func == (lhs: TrackEntity, rhs: TrackEntity) -> Bool {
         return (lhs.collectionName == rhs.collectionName) &&
             (lhs.trackNumber == rhs.trackNumber) &&
         (lhs.discNumber == rhs.discNumber)

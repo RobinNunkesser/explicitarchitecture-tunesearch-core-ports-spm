@@ -1,6 +1,6 @@
 import Foundation
 
-class CollectionEntity {
+public class CollectionEntity {
     let name : String
     let tracks : [TrackEntity]
     
